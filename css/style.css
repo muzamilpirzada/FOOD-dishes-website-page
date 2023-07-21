@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: url("../Food-dim/mbg2.jpg") no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+header{
+    position: relative;
+    width: 80%;
+    height: 80%;
+    border-radius: 20px;
+    box-shadow: 5px 10px 10px #000;
+    overflow: hidden;
+}
+header .bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    z-index: -1;
+}
+header nav{
+    width: 90%;
+    height: 15%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    list-style-type: none;
+}
+header nav li{
+    padding-left: 25px;
+}
+header nav li a{
+    text-decoration: none;
+    color: grey;
+    font-size: 13px;
+    transition: all .3s ease-in-out;
+}
+header nav li a:hover{
+    color: #000;
+}
+header nav>img{
+width: 50px;
+height: 50px;
+}
+.main-container{
+    width: 100%;
+    height: 85%;
+    border: 1px solid red;
+    display: flex;
+
+}
+
+header .main-container .content-box, .dish-box{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    border: 1px solid red;
+}
+header .main-container .content-box{
+    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+header .main-container .content-box h3{
+    font-size: 18px;
+    color: crimson;
+    padding-bottom: 5px;
+    transition: all .3s ease-in-out;
+    
+}
+header .main-container .content-box p{
+    width: 350px;
+    font-size: 13px;
+    color: grey;
+    word-break: break-all;
+    transition: all .3s ease-in-out;
+}
+header .main-container .content-box button{
+  width: 150px;
+  padding: 8px 10px;
+  border-radius: 30px;
+  margin-top: 10px;
+  border: 2px solid #131314;
+  background-color: #131314;
+  color: #fff;
+  box-shadow: 3px 5px  8px grey;
+  margin-bottom: 60px;
+  transition: all .3s ease-in-out;
+
+}
+
+header .main-container .content-box button:hover{
+    background-color: #fff;
+    color: #131314;
+    font-weight: bold;
+}
+
+header .main-container .content-box .menu{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    /* border: 1px solid red; */
+    bottom: 0;
+    display: flex;
+    align-items: center;
+
+}
+header .main-container .content-box .menu img{
+    width: 80px;
+    height: 60px;
+    cursor: pointer;
+    padding-right: 20px;
+    bottom: 0;
+    transition: all .3s ease-in-out;
+
+
+}
+header .main-container .content-box .menu img:hover{
+  width: 90px;
+  height: 70px;
+
+
+}
+header .main-container .dish-box .dish1{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: -35px;
+    filter: drop-shadow(5px 10px 10px #000);
+    transition: all .6s ease-in-out;
+  
+  
+  }
